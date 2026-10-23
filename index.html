@@ -3,21 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>올케어에듀 · 수학 학습현황</title>
+<title>올케어에듀학원 · 수학 학습현황</title>
 <meta name="description" content="매쓰플랫 학습 기록으로 정리한 학습현황 · 오답 시험지 · 선생님 메시지">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="올케어에듀학원">
-<meta property="og:title" content="올케어에듀 · 수학 학습현황">
+<meta property="og:title" content="올케어에듀학원 · 수학 학습현황">
 <meta property="og:description" content="매쓰플랫 학습 기록으로 정리한 학습현황 · 오답 시험지 · 선생님 메시지">
 <meta property="og:image" content="https://allcare-edu.github.io/og.png">
-<meta name="theme-color" content="#1F3864">
+<meta name="theme-color" content="#ffffff">
 <meta name="robots" content="noindex,nofollow">
 <link rel="icon" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <style>
 body{margin:0;background:#F3F5F9;font:15px/1.55 -apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;color:#1d2433}
 #ld{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;color:#66708a}
-#ld .lg{font-size:20px;color:#1F3864;font-weight:700}#ld .lg b{color:#C0A05C;margin-right:6px}
+#ld .lg img{height:46px;display:block}
 #ld .sp{width:30px;height:30px;border:3px solid #D5DBE6;border-top-color:#1F3864;border-radius:50%;animation:r 0.9s linear infinite}
 @keyframes r{to{transform:rotate(360deg)}}
 #ld button{background:#1F3864;color:#fff;border:0;border-radius:8px;padding:9px 16px;font:inherit}
@@ -25,7 +25,7 @@ body{margin:0;background:#F3F5F9;font:15px/1.55 -apple-system,"Apple SD Gothic N
 </style>
 </head>
 <body>
-<div id="ld"><div class="lg"><b>ALLCARE</b>올케어에듀 · 수학</div><div class="sp"></div><div id="ldm">학습현황을 불러오는 중…</div></div>
+<div id="ld"><div class="lg"><img src="logo.png" alt="올케어에듀학원"></div><div class="sp"></div><div id="ldm">학습현황을 불러오는 중…</div></div>
 <script>
 (function () {
   var API = 'https://script.google.com/macros/s/AKfycbxW0CtTF6mxTqq1WAxZ63ttMoHbE151qmCJn3UdXIDEZXCW79pC41WakaxNxKbyclq7/exec';
@@ -86,7 +86,7 @@ body{margin:0;background:#F3F5F9;font:15px/1.55 -apple-system,"Apple SD Gothic N
     window.scrollTo(0, 0);
   }
   function fail(msg) {
-    document.getElementById('ld').innerHTML = '<div class="lg"><b>ALLCARE</b>올케어에듀 · 수학</div><div>' + msg + '</div><button onclick="location.reload()">다시 불러오기</button><div style="font-size:13px">계속 안 되면 학원(010-4717-6373)으로 연락 주세요.</div>';
+    document.getElementById('ld').innerHTML = '<div class="lg"><img src="logo.png" alt="올케어에듀학원"></div><div>' + msg + '</div><button onclick="location.reload()">다시 불러오기</button><div style="font-size:13px">계속 안 되면 학원(010-4717-6373)으로 연락 주세요.</div>';
   }
 
   if (!/(^|&)(s|p|a)=/.test(q)) { fail('학원에서 받은 개인 링크로 들어와 주세요.'); return; }
